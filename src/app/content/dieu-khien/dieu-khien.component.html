@@ -1,0 +1,115 @@
+<div class="row">
+  <div class="col-lg-12">
+    <h1 class="page-header">Điều khiển</h1>
+  </div>
+</div>
+<div class="row" style="float: right;margin-bottom: 15px">
+  <div class="col-lg-12">
+    <button type="button" class="btn btn-info">+Thêm thiết bị</button>
+  </div>
+</div>
+<div class="clear-fix">
+
+</div>
+
+<div class="row">
+  <div class="col-lg-4 col-md-6" style="margin-bottom: 15px">
+    <div class="panel panel-red">
+      <div class="panel-heading">
+        <h3 class="panel-title">Nhiệt độ</h3>
+      </div>
+      <div class="panel-body">
+        <div class="main">
+          <div class="panel panel-red">
+            <div class="panel-heading">
+              <div class="row">
+                <div class="col-xs-3">
+                  <i class="fa fa-comments fa-5x"></i>
+                </div>
+                <div class="col-xs-9 text-right">
+                  <div class="huge">{{AverageNhietDo}}&deg;C</div>
+                  <div>Nhiệt độ ổn định</div>
+                </div>
+              </div>
+            </div>
+            <a>
+              <div class="panel-footer">
+                <span class="pull-left">Tình trạng</span>
+                <span class="pull-right">
+                  <ui-switch [(ngModel)]="nhietDo" color="#D9534F" (change)="onChangeNhietDo($event)"></ui-switch>
+                </span>
+                <div class="clearfix"></div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4 col-md-6" style='margin-bottom: 15px;'>
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+        <h3 class="panel-title">Độ ẩm</h3>
+      </div>
+      <div class="panel-body">
+        <div class="main">
+          <div class="panel panel-primary">
+            <div class="panel-heading">
+              <div class="row">
+                <div class="col-xs-3">
+                  <i class="fa fa-tasks fa-5x"></i>
+                </div>
+                <div class="col-xs-9 text-right">
+                  <div class="huge">{{AverageDoAm}}</div>
+                  <div>Vừa phải</div>
+                </div>
+              </div>
+            </div>
+            <a>
+              <div class="panel-footer">
+                <span class="pull-left">Tình trạng</span>
+                <span class="pull-right">
+                  <ui-switch [(ngModel)]="doAm" (change)="onChangeDoAm($event)" color="#337AB7"></ui-switch>
+                </span>
+                <div class="clearfix"></div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4 col-md-6" style='margin-bottom:15px'>
+    <div class="panel panel-yellow">
+      <div class="panel-heading">
+        <h3 class="panel-title">Mật độ</h3>
+      </div>
+      <div class="panel-body">
+        <div class="main">
+          <div class="panel panel-yellow">
+            <div class="panel-heading">
+              <div class="row">
+                <div class="col-xs-3">
+                  <i class="fa fa-tasks fa-5x"></i>
+                </div>
+                <div class="col-xs-9 text-right">
+                  <div class="huge">{{AverageMatDo}}PPM</div>
+                  <div>Trung Bình</div>
+                </div>
+              </div>
+            </div>
+            <a>
+              <div class="panel-footer">
+                <span class="pull-left">Tình trạng</span>
+                <span class="pull-right">
+                  <ui-switch [(ngModel)]="matDo" (change)="onChangeMatDo($event)" color="#F0AD4E"></ui-switch>
+                </span>
+                <div class="clearfix"></div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,12 @@
+a{
+    color: #ffffff;
+}
+a.navbar-brand{
+    font-size: 22px;
+    color: #ECF0F1!important;
+    cursor: pointer;
+}
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover{
+    color: #ECF0F1!important;
+
+}

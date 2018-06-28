@@ -1,0 +1,7 @@
+.navbar-default{
+    background-color:#2A3F54;
+}
+#page-wrapper{
+    overflow-x: auto;
+    height: calc(100vh - 51px);
+}

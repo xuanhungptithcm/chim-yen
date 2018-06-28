@@ -1,0 +1,34 @@
+<div class="navbar-default sidebar" role="navigation">
+  <div class="sidebar-nav navbar-collapse">
+    <ul class="nav" id="side-menu">
+      <li class="sidebar-search">
+        <div class="input-group custom-search-form">
+          <input type="text" class="form-control" placeholder="Search...">
+          <span class="input-group-btn">
+            <button class="btn btn-default" type="button">
+              <i class="fa fa-search"></i>
+            </button>
+          </span>
+        </div>
+        <!-- /input-group -->
+      </li>
+      <li>
+        <a [class.active]="trangHienTai === 0" (click)="changeComponent(0)">
+          <i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+      </li>
+      <li>
+        <a [class.active]="trangHienTai === 1" (click)="changeComponent(1)">
+          <i class="fa fa-bar-chart-o fa-fw"></i> Đọc cảm biến
+        </a>
+      </li>
+      <li>
+        <a [class.active]="trangHienTai === 2" (click)="changeComponent(2)">
+          <i class="fa fa-table fa-fw"></i> Lặp lệnh</a>
+      </li>
+      <li>
+        <a [class.active]="trangHienTai === 3" (click)="changeComponent(3)">
+          <i class="fa fa-cogs fa-fw"></i> Điều khiển</a>
+      </li>
+    </ul>
+  </div>
+</div>

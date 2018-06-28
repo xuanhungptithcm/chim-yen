@@ -1,0 +1,33 @@
+#temperature{
+    color: #D9534F;
+}
+#humidity{
+    color: #337AB7;
+}
+#density {
+    color: #F0AD4E;
+}
+.addElement{
+    cursor: pointer;
+}
+.timer{
+    width: 40px;
+    height: 32px;
+    border-radius: 100%;
+    outline: none;
+    border: 1px solid #337AB7;
+}
+.timer1{
+    width: 40px;
+    height: 32px;
+    border-radius: 100%;
+    outline: none;
+    border: 1px solid #F0AD4E;
+}
+.timer2{
+    width: 40px;
+    height: 32px;
+    border-radius: 100%;
+    outline: none;
+    border: 1px solid #D9534F;
+}
